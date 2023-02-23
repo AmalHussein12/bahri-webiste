@@ -3564,9 +3564,35 @@
     .tab-pane .img {
         display: none;
     }
+
     .logo-area .logo-image {
         height: auto;
     }
+
+    .section-title.inner.one {
+        margin-bottom: 0;
+    }
+
+    .campus-safety-area.inner .counter-area {
+        margin-bottom: 30px;
+    }
+
+    .logo-area .row.inner {
+        border: none;
+    }
+
+    .logo-area .exam-card {
+        padding-bottom: 0;
+    }
+
+    .logo-area .exam-card h4 {
+        font-size: 17px;
+    }
+    html[dir="rtl"] .instructor-image ,.instructor-image {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
@@ -3623,11 +3649,31 @@
     .tab-pane .img {
         display: none;
     }
+
     .logo-area .logo-image {
         height: 300px;
     }
+
     .logo-area .logo-image img {
         max-width: 100%;
+    }
+
+    .section-title.inner.one {
+        margin-bottom: 0;
+    }
+
+    .campus-safety-area.inner .counter-area {
+        margin-bottom: 30px;
+    }
+     .instructor-image {
+        height: auto;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    .instructor-image img {
+        object-fit: contain;
+        max-width: 100%;
+        height: auto;
     }
 }
 
@@ -3711,8 +3757,23 @@
     }
 
     .how-to-apply p,
-    .logo-area .exam-card p {
+    .logo-area .exam-card p,
+    .condition-content p,
+    .category-list ul li a {
         font-size: 15px;
+    }
+    .instructor-image {
+        height: auto;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    .instructor-image img {
+        object-fit: contain;
+        max-width: 100%;
+        height: auto;
+    }
+    .instructor-image .content h4 {
+        font-size: 16px;
     }
 }
 

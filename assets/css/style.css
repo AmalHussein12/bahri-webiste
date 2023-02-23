@@ -3042,6 +3042,7 @@
       margin-bottom: 20px;
       font-size: 16px;
       font-weight: 500;
+      line-height: 1.8;
   }
 
   .overview .overview-box {
@@ -3085,6 +3086,7 @@
       font-weight: 500;
       position: relative;
       padding-left: 20px;
+      line-height: 1.8;
   }
 
   .curriculum .list ul li::before {
@@ -3162,11 +3164,13 @@
 
   .instructor .instructor-content .name h3 {
       font-size: 24px;
-      margin-bottom: 10px
+      margin-bottom: 20px
   }
 
   .instructor .instructor-content .quick-contact {
-      margin-bottom: 20px
+      margin-bottom: 20px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 20px;
   }
 
   .instructor .instructor-content .quick-contact h4 {
@@ -3183,17 +3187,79 @@
   .instructor .instructor-content .quick-contact ul li {
       list-style-type: none;
       display: flex;
+      margin-bottom: 20px;
+      font-size: 16.5px;
+      font-weight: 500;
+      line-height: 1.8;
   }
+
+  .instructor-image {
+      margin-right: 30px;
+      height: 400px;
+      overflow: hidden;
+      position: relative;
+      background: #f4f6f9;
+  }
+
+  .instructor-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+  }
+
+  .instructor-image .content {
+      background-color: #008a3d;
+      text-align: center;
+      padding: 20px 0 15px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+  }
+
+  .instructor-image .content h4 {
+      color: white;
+      font-size: 22px;
+  }
+
+  .instructor .instructor-content .quick-contact ul li span {
+      margin-right: 20px;
+      display: block;
+      min-width: 100px;
+  }
+
+.instructor .instructor-content .quick-contact ul li .content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
 
   .instructor .instructor-content .quick-contact ul li i {
       color: #212121;
       position: relative;
       top: 2px;
+      font-size: 18px;
       margin-right: 7px
   }
 
   .instructor .instructor-content .quick-contact ul li a {
       color: #212121
+  }
+
+  .user-card {
+      margin-bottom: 30px;
+  }
+
+  .user-card .content {
+      background-color: #e32845;
+      text-align: center;
+      padding: 20px 0 15px;
+  }
+
+  .user-card .content h4 {
+      font-size: 22px;
+      color: #fff;
   }
 
   .instructor .instructor-content .social ul {
@@ -3205,16 +3271,16 @@
   .instructor .instructor-content .social ul li {
       display: inline-block;
       list-style-type: none;
-      margin-right: 10px
+      margin-right: 5px
   }
 
   .instructor .instructor-content .social ul li a {
-      height: 35px;
-      width: 35px;
-      line-height: 35px;
-      border-radius: 7px;
+      height: 40px;
+      width: 40px;
+      line-height: 40px;
+      border-radius: 50%;
       text-align: center;
-      font-size: 18px;
+      font-size: 17px;
       background-color: #212121;
       color: #fff;
       display: inline-block;
@@ -3227,6 +3293,11 @@
       color: #fff
   }
 
+  .instructor .instructor-content .social h3 {
+      font-size: 24px;
+      margin-bottom: 18px;
+  }
+
   .review-form h3 {
       font-size: 24px;
       margin-bottom: 20px
@@ -3234,10 +3305,6 @@
 
   .review-form .form-group {
       margin-bottom: 30px
-  }
-
-  .review-form .form-group label {
-      mn: 7px
   }
 
   .single-reviews-card {
@@ -3943,7 +4010,10 @@
       list-style-type: none;
       margin-bottom: 12px;
       position: relative;
-      padding-left: 20px
+      padding-left: 20px;
+      font-weight: 500;
+      font-size: 16.5px;
+      line-height: 1.8;
   }
 
   .how-to-apply .apply-list ul li i {
@@ -5233,31 +5303,36 @@
   }
 
   .category-list h3 {
-      font-size: 22px;
+      font-size: 25px;
       margin-bottom: 20px
   }
 
   .category-list ul {
       padding-left: 0;
-      margin-bottom: 0
+      margin-bottom: 0;
+      padding: 0;
   }
 
   .category-list ul li {
       list-style-type: none;
       position: relative;
-      margin-bottom: 10px
+      margin-bottom: 15px
   }
 
   .category-list ul li a {
-      color: #555;
+      color: #383838;
       -webkit-transition: all ease .5s;
-      transition: all ease .5s
+      transition: all ease .5s;
+      font-size: 16px;
+      font-weight: 500;
   }
 
   .category-list ul li i {
       position: absolute;
       right: 0;
-      font-size: 22px
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 26px
   }
 
   .category-list ul li:last-child {
@@ -5748,14 +5823,15 @@
   }
 
   .page-banner-content h1 {
-      font-size: 50px;
-      margin-bottom: 10px;
+      font-size: 48px;
+      margin-bottom: 20px;
       color: #fff
   }
 
   .page-banner-content ul {
       padding-left: 0;
-      margin-bottom: 0
+      margin-bottom: 0;
+      padding: 0;
   }
 
   .page-banner-content ul li {
@@ -6053,7 +6129,8 @@
 
   .contact-and-address .social-media ul {
       padding-left: 0;
-      margin-bottom: 0
+      margin-bottom: 0;
+      padding: 0;
   }
 
   .contact-and-address .social-media ul li {
@@ -6442,7 +6519,10 @@
   }
 
   .condition-content p {
-      margin-bottom: 25px
+      margin-bottom: 25px;
+      font-weight: 500;
+      font-size: 16.5px;
+      line-height: 1.9;
   }
 
   .condition-content .list ul {
@@ -6653,6 +6733,7 @@
   .logo-area .exam-card p {
       font-size: 16.5px;
       font-weight: 500;
+      line-height: 1.7;
   }
 
 
@@ -7254,7 +7335,7 @@
 
   html[dir="rtl"] .instructor .instructor-content .social ul li {
       margin-right: 0;
-      margin-left: 10px;
+      margin-left: 5px;
   }
 
   html[dir="rtl"] .curriculum .list ul li {
@@ -7280,6 +7361,41 @@
   html[dir="rtl"] .logo-area .logo-image {
       margin-right: 0;
       margin-left: 20px;
+  }
+
+  html[dir="rtl"] .condition-content .list ul li {
+      padding-left: 0;
+      padding-right: 20px;
+  }
+
+  html[dir="rtl"] .condition-content .list ul li i {
+      left: auto;
+      right: 0;
+  }
+
+  html[dir="rtl"] .category-list ul li i {
+      right: auto;
+      left: 0;
+      transform: translateY(-50%) rotate(-180deg);
+  }
+
+  html[dir="rtl"] .form-check .form-check-input {
+      float: right;
+  }
+
+  html[dir="rtl"] .contact-and-address .social-media ul li {
+      margin-right: 0;
+      margin-left: 10px;
+  }
+
+  html[dir="rtl"] .instructor .instructor-content .quick-contact ul li span {
+      margin-right: 0;
+      margin-left: 20px;
+  }
+
+  html[dir="rtl"] .instructor-image {
+      margin-right: 0;
+      margin-left: 30px;
   }
 
   /* /. DIRECTION EDIT */
