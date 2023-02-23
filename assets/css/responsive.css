@@ -3292,7 +3292,7 @@
     }
 
     .single-academics-card .academic-top-content h3 {
-        font-size: 18px
+        font-size: 19px
     }
 
     .single-alumni-events-card {
@@ -3550,6 +3550,14 @@
         right: auto;
         left: 13%;
     }
+    .description .nav-tabs {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .description .nav-tabs .nav-link {
+        background: #f4f6f9;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
@@ -3592,6 +3600,14 @@
         right: auto;
         left: 12%;
     }
+    .description .nav-tabs {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .description .nav-tabs .nav-link {
+        background: #fff;
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
@@ -3630,6 +3646,40 @@
     html[dir="rtl"] .campus-content .campus-title h2::after {
         right: auto;
         left: 76%;
+    }
+
+    .footer-widjet h3::after {
+        left: 3%;
+        right: auto;
+    }
+
+    html[dir="rtl"] .footer-widjet h3::after {
+        left: auto;
+        right: 3%;
+    }
+    .section-title.inner p {
+        font-size: 16px;
+    }
+    .campus-safety-area.inner .counter-area {
+        margin-bottom: 30px;
+    }
+    .courses-details .courses-card .img {
+        height: auto;
+    }
+    .courses-details .courses-card .img img {
+        max-width: 100%;
+        height: auto;
+    }
+    .description .nav-tabs {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .description .nav-tabs .nav-link {
+        background: #f4f6f9;
+    }
+    .how-to-apply p {
+        font-size: 15px;
     }
 }
 
