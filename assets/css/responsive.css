@@ -3550,16 +3550,22 @@
         right: auto;
         left: 13%;
     }
+
     .description .nav-tabs {
         width: 100%;
         display: flex;
         flex-direction: column;
     }
+
     .description .nav-tabs .nav-link {
         background: #f4f6f9;
     }
-    .tab-pane  .img {
+
+    .tab-pane .img {
         display: none;
+    }
+    .logo-area .logo-image {
+        height: auto;
     }
 }
 
@@ -3603,16 +3609,25 @@
         right: auto;
         left: 12%;
     }
+
     .description .nav-tabs {
         width: 100%;
         display: flex;
         flex-direction: column;
     }
+
     .description .nav-tabs .nav-link {
         background: #fff;
     }
-    .tab-pane  .img {
+
+    .tab-pane .img {
         display: none;
+    }
+    .logo-area .logo-image {
+        height: 300px;
+    }
+    .logo-area .logo-image img {
+        max-width: 100%;
     }
 }
 
@@ -3633,7 +3648,8 @@
     .header-left-content .list ul > li::after {
         display: none;
     }
-    .tab-pane  .img {
+
+    .tab-pane .img {
         display: none;
     }
 }
@@ -3666,28 +3682,36 @@
         left: auto;
         right: 3%;
     }
+
     .section-title.inner p {
         font-size: 16px;
     }
+
     .campus-safety-area.inner .counter-area {
         margin-bottom: 30px;
     }
+
     .courses-details .courses-card .img {
         height: auto;
     }
+
     .courses-details .courses-card .img img {
         max-width: 100%;
         height: auto;
     }
+
     .description .nav-tabs {
         width: 100%;
         display: flex;
         flex-direction: column;
     }
+
     .description .nav-tabs .nav-link {
         background: #f4f6f9;
     }
-    .how-to-apply p {
+
+    .how-to-apply p,
+    .logo-area .exam-card p {
         font-size: 15px;
     }
 }

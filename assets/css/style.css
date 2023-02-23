@@ -2951,11 +2951,13 @@
       height: 400px;
       overflow: hidden;
   }
-.courses-details .courses-card .img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
+
+  .courses-details .courses-card .img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+  }
+
   .courses-details .courses-card .list ul {
       padding-left: 0;
       margin-bottom: 0
@@ -3096,15 +3098,15 @@
       top: 6px;
   }
 
-.tab-pane  .img {
-    height: 300px;
-} 
+  .tab-pane .img {
+      height: 300px;
+  }
 
-.tab-pane  .img  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
+  .tab-pane .img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+  }
 
   .curriculum p {
       margin-bottom: 20px
@@ -3146,9 +3148,9 @@
   }
 
 
-.curriculum .list.tow li::before {
-    display: none;
-}
+  .curriculum .list.tow li::before {
+      display: none;
+  }
 
   .instructor {
       margin-bottom: 30px
@@ -3915,7 +3917,7 @@
   }
 
   .how-to-apply h2 {
-      font-size: 42px;
+      font-size: 40px;
       margin-bottom: 20px
   }
 
@@ -6604,6 +6606,55 @@
       padding-top: 7px
   }
 
+  .logo-area .logo-image {
+      height: 480px;
+      border: 1px solid #212121db;
+      margin-right: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #fff;
+      overflow: hidden;
+  }
+
+  .logo-area .row.inner {
+      border-bottom: 1px solid #eee;
+  }
+
+  .logo-area .row.inner:last-of-type {
+      border-bottom: none;
+  }
+
+  .logo-area .exam-card {
+      margin-top: 30px;
+      padding-left: 30px;
+      padding-bottom: 30px;
+  }
+
+  .logo-area .exam-card h4 {
+      font-size: 18.5px;
+      margin-bottom: 15px;
+      position: relative;
+      color: #212121;
+      line-height: 1.5;
+  }
+
+  .logo-area .exam-card h4::before {
+      position: absolute;
+      content: '';
+      height: 10px;
+      width: 10px;
+      border-radius: 100%;
+      background-color: #008a3d;
+      left: -30px;
+      top: 5px;
+  }
+
+  .logo-area .exam-card p {
+      font-size: 16.5px;
+      font-weight: 500;
+  }
+
 
   /* RS SLIDER EDITS */
   .rs-slider {
@@ -7214,6 +7265,21 @@
   html[dir="rtl"] .curriculum .list ul li::before {
       left: auto;
       right: 0;
+  }
+
+  html[dir="rtl"] .logo-area .exam-card h4::before {
+      left: auto;
+      right: -30px;
+  }
+
+  html[dir="rtl"] .logo-area .exam-card {
+      padding-left: 0;
+      padding-right: 30px;
+  }
+
+  html[dir="rtl"] .logo-area .logo-image {
+      margin-right: 0;
+      margin-left: 20px;
   }
 
   /* /. DIRECTION EDIT */
