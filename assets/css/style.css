@@ -3096,6 +3096,16 @@
       top: 6px;
   }
 
+.tab-pane  .img {
+    height: 300px;
+} 
+
+.tab-pane  .img  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
   .curriculum p {
       margin-bottom: 20px
   }

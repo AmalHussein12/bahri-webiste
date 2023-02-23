@@ -3558,6 +3558,9 @@
     .description .nav-tabs .nav-link {
         background: #f4f6f9;
     }
+    .tab-pane  .img {
+        display: none;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
@@ -3608,6 +3611,9 @@
     .description .nav-tabs .nav-link {
         background: #fff;
     }
+    .tab-pane  .img {
+        display: none;
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
@@ -3625,6 +3631,9 @@
     }
 
     .header-left-content .list ul > li::after {
+        display: none;
+    }
+    .tab-pane  .img {
         display: none;
     }
 }
