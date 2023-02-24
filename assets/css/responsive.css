@@ -802,7 +802,7 @@
     }
 
     .single-events-card .events-content h3 {
-        font-size: 20px
+        font-size: 17.5px
     }
 
     .events-slider.mb-20 {
@@ -3565,7 +3565,15 @@
         display: none;
     }
 
-    .logo-area .logo-image {
+    .logo-area .logo-image,
+    html[dir="rtl"] .logo-area .logo-image {
+        height: auto;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .logo-area .logo-image img {
+        max-width: 100%;
         height: auto;
     }
 
@@ -3588,11 +3596,13 @@
     .logo-area .exam-card h4 {
         font-size: 17px;
     }
-    html[dir="rtl"] .instructor-image ,.instructor-image {
+
+    html[dir="rtl"] .instructor-image,
+    .instructor-image {
         margin-left: 0;
         margin-right: 0;
     }
-    
+
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
@@ -3665,11 +3675,13 @@
     .campus-safety-area.inner .counter-area {
         margin-bottom: 30px;
     }
-     .instructor-image {
+
+    .instructor-image {
         height: auto;
         margin-left: 0 !important;
         margin-right: 0 !important;
     }
+
     .instructor-image img {
         object-fit: contain;
         max-width: 100%;
@@ -3759,21 +3771,65 @@
     .how-to-apply p,
     .logo-area .exam-card p,
     .condition-content p,
-    .category-list ul li a {
+    .category-list ul li a,
+    .overview .overview-box h4,
+    .overview .learn p,
+    .campus-content .campus-title p,
+    .section-title p,
+    .how-to-apply .apply-list ul li,
+    .instructor .instructor-content .quick-contact ul li,
+    .instructor .instructor-content .quick-contact ul li i,
+    .curriculum .list ul li {
         font-size: 15px;
     }
+
+    .instructor .instructor-content .name h3,
+    .instructor .instructor-content .social h3 {
+        font-size: 21px;
+    }
+
+    .overview .learn h3 i {
+        font-size: 24px;
+    }
+
+    .curriculum .list ul li::before,
+    .logo-area .exam-card h4::before {
+        top: 11px;
+        width: 8px;
+        height: 8px;
+    }
+
+    .instructor .instructor-content .social ul li a {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        font-size: 14px;
+    }
+
+    .related-download ul li i {
+        font-size: 21px;
+    }
+
     .instructor-image {
         height: auto;
         margin-left: 0 !important;
         margin-right: 0 !important;
     }
+
     .instructor-image img {
         object-fit: contain;
         max-width: 100%;
         height: auto;
     }
+
     .instructor-image .content h4 {
         font-size: 16px;
+    }
+    .condition-content.mt-5 {
+        margin-top: 40px !important;
+    }
+    .table tr td {
+        font-size: 15px;
     }
 }
 

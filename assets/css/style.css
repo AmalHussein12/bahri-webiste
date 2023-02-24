@@ -3004,6 +3004,16 @@
       margin-bottom: 30px
   }
 
+  .description.two {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border: none;
+  }
+
+  .description.two.bg-f4f6f9 .tab-content {
+      padding: 0 30px 30px;
+  }
+
   .description .nav-tabs {
       font-size: 18px;
       margin-bottom: 30px;
@@ -3012,13 +3022,19 @@
       border: none
   }
 
+  .description.two .nav-tabs {
+      box-shadow: none;
+      background: #f4f6f9;
+  }
+
   .description .nav-tabs .nav-link {
       color: #008a3d;
       padding-bottom: 10px;
       padding: 15px 20px;
       font-weight: 600;
       border: none;
-      border-radius: 0
+      border-radius: 0;
+      flex-grow: 1;
   }
 
   .description .nav-tabs .nav-link.active {
@@ -3035,24 +3051,40 @@
 
   .overview .learn h3 {
       font-size: 25px;
-      margin-bottom: 20px
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+  }
+
+  .overview .learn h3 i {
+      margin-right: 10px;
+      font-size: 27px;
+      color: #212121;
+  }
+
+  html[dir="rtl"] .overview .learn h3 i {
+      margin-right: 0;
+      margin-left: 10px;
   }
 
   .overview .learn p {
       margin-bottom: 20px;
-      font-size: 16px;
+      font-size: 16.5px;
       font-weight: 500;
       line-height: 1.8;
   }
 
   .overview .overview-box {
-      padding-left: 30px;
-      margin-bottom: 30px
+      padding-left: 20px;
+      margin-bottom: 10px
   }
 
   .overview .overview-box h4 {
-      font-size: 18px;
-      position: relative
+      font-size: 16.5px;
+      position: relative;
+      font-weight: 500;
+      color: #555;
+      line-height: 1.8;
   }
 
   .overview .overview-box h4::before {
@@ -3063,7 +3095,7 @@
       border-radius: 100%;
       background-color: #212121;
       left: -30px;
-      top: 5px
+      top: 11px
   }
 
   .curriculum {
@@ -3097,7 +3129,7 @@
       border-radius: 100%;
       background-color: rgb(0, 167, 106);
       left: 0;
-      top: 6px;
+      top: 11px;
   }
 
   .tab-pane .img {
@@ -3119,7 +3151,15 @@
       background-color: #f4f6f9
   }
 
-
+.image-strucure {
+    background: #fff;
+    text-align: center;
+    padding: 30px 10px;
+}
+.image-strucure img {
+    max-width: 100%;
+    height: auto;
+}
   .curriculum .curriculum-list ul {
       padding-left: 0;
       margin-bottom: 0;
@@ -3229,11 +3269,11 @@
       min-width: 100px;
   }
 
-.instructor .instructor-content .quick-contact ul li .content {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-}
+  .instructor .instructor-content .quick-contact ul li .content {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+  }
 
   .instructor .instructor-content .quick-contact ul li i {
       color: #212121;
@@ -5777,6 +5817,31 @@
       color: #008a3d;
   }
 
+  .table {
+      background: #f4f6f9;
+  }
+
+  .table tr {}
+
+  .table thead {
+      background: #008a3d;
+      color: white;
+  }
+
+  .table tr td {
+      text-align: center;
+      padding: 15px 0;
+      font-size: 16.5px;
+      font-weight: 500;
+      border: 1px solid #d5d0d0;
+      font-weight: 500;
+  }
+
+  .table thead tr td {
+      border: 1px solid #ffffff6e;
+      font-weight: 600;
+  }
+
   .page-banner-area {
       background-size: cover;
       background-position: center center;
@@ -6518,6 +6583,21 @@
       margin-bottom: 15px
   }
 
+  .condition-content.two h4 {
+      margin-bottom: 0;
+  }
+
+.condition-content.two.bg {
+    padding: 30px;
+    background: #f4f6f9;
+    border-bottom: 0;
+}
+.terms-condition-area .condition-content.two.bg:last-of-type {
+    padding-bottom: 30px;
+}
+.condition-content.two .overview .overview-box h4::before {
+    background: #00a76a;
+}
   .condition-content p {
       margin-bottom: 25px;
       font-weight: 500;
@@ -6543,6 +6623,21 @@
       position: absolute;
       left: 0;
       color: #212121
+  }
+
+  .condition-content.two {
+      margin-bottom: 30px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 30px;
+  }
+
+  .terms-condition-area .condition-content.two:last-of-type {
+      border: none;
+      padding-bottom: 0;
+  }
+
+  .condition-content.two p {
+      margin-bottom: 0;
   }
 
   .error-area {
@@ -6727,7 +6822,7 @@
       border-radius: 100%;
       background-color: #008a3d;
       left: -30px;
-      top: 5px;
+      top: 10px;
   }
 
   .logo-area .exam-card p {
@@ -7315,7 +7410,7 @@
 
   html[dir="rtl"] .overview .overview-box {
       padding-left: 0px;
-      padding-right: 30px;
+      padding-right: 20px;
   }
 
   html[dir="rtl"] .overview .overview-box h4::before {
