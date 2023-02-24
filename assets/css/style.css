@@ -569,7 +569,7 @@
 
   .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu.mega {
       width: 100%;
-      top: 100%;
+      top: 103%;
   }
 
   .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu.mega.tow {
@@ -3011,7 +3011,42 @@
   }
 
   .description.two.bg-f4f6f9 .tab-content {
-      padding: 0 30px 30px;
+      padding: 0 20px 30px;
+  }
+
+  .overview .overview-box.px-37 {
+      padding-left: 37px;
+      padding-right: 0;
+  }
+
+  html[dir="rtl"] .overview .overview-box.px-37 {
+      padding-left: 0px;
+      padding-right: 37px;
+  }
+
+.overview .overview-box .list ul {
+    padding: 0;
+    margin-top: 20px;
+}
+.overview .overview-box .list ul li {
+    font-weight: 500;
+    font-size: 16.5px;
+        color: #555;
+    line-height: 1.8;
+}
+  .overview .overview-box.list h4 {
+      font-weight: 700;
+      color: rgb(0, 167, 106);
+      font-size: 18px;
+  }
+
+  .overview .overview-box.list p {
+      font-size: 16.5px;
+      font-weight: 500;
+  }
+
+  .description.two.bg-f4f6f9 .tab-content .overview {
+      padding: 0 15px;
   }
 
   .description .nav-tabs {
@@ -3151,15 +3186,17 @@
       background-color: #f4f6f9
   }
 
-.image-strucure {
-    background: #fff;
-    text-align: center;
-    padding: 30px 10px;
-}
-.image-strucure img {
-    max-width: 100%;
-    height: auto;
-}
+  .image-strucure {
+      background: #fff;
+      text-align: center;
+      padding: 30px 10px;
+  }
+
+  .image-strucure img {
+      max-width: 100%;
+      height: auto;
+  }
+
   .curriculum .curriculum-list ul {
       padding-left: 0;
       margin-bottom: 0;
@@ -3202,6 +3239,11 @@
       margin-bottom: 25px
   }
 
+  .instructor .instructor-content .name p {
+      font-size: 16.5px;
+      font-weight: 500;
+  }
+
   .instructor .instructor-content .name h3 {
       font-size: 24px;
       margin-bottom: 20px
@@ -3211,6 +3253,20 @@
       margin-bottom: 20px;
       border-bottom: 1px solid #eee;
       padding-bottom: 20px;
+  }
+
+  .instructor.inner {
+      margin-bottom: 0;
+  }
+
+  .instructor.inner .instructor-content .quick-contact {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border: none;
+  }
+
+  .instructor.inner .instructor-image {
+      height: 250px;
   }
 
   .instructor .instructor-content .quick-contact h4 {
@@ -6587,17 +6643,20 @@
       margin-bottom: 0;
   }
 
-.condition-content.two.bg {
-    padding: 30px;
-    background: #f4f6f9;
-    border-bottom: 0;
-}
-.terms-condition-area .condition-content.two.bg:last-of-type {
-    padding-bottom: 30px;
-}
-.condition-content.two .overview .overview-box h4::before {
-    background: #00a76a;
-}
+  .condition-content.two.bg {
+      padding: 30px;
+      background: #f4f6f9;
+      border-bottom: 0;
+  }
+
+  .terms-condition-area .condition-content.two.bg:last-of-type {
+      padding-bottom: 30px;
+  }
+
+  .condition-content.two .overview .overview-box h4::before {
+      background: #00a76a;
+  }
+
   .condition-content p {
       margin-bottom: 25px;
       font-weight: 500;

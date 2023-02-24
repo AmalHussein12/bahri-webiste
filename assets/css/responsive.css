@@ -3779,7 +3779,9 @@
     .how-to-apply .apply-list ul li,
     .instructor .instructor-content .quick-contact ul li,
     .instructor .instructor-content .quick-contact ul li i,
-    .curriculum .list ul li {
+    .curriculum .list ul li,
+    .instructor .instructor-content .name p,
+    .overview .overview-box.list p {
         font-size: 15px;
     }
 
@@ -3825,9 +3827,11 @@
     .instructor-image .content h4 {
         font-size: 16px;
     }
+
     .condition-content.mt-5 {
         margin-top: 40px !important;
     }
+
     .table tr td {
         font-size: 15px;
     }
