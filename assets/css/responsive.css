@@ -1289,8 +1289,11 @@
 
     .error-area .top-content ul li {
         font-size: 100px;
-        margin-right: 15px;
         margin-bottom: 15px
+    }
+
+    .error-area .top-content ul li:nth-of-type(2) {
+        margin: 0 10px;
     }
 
     .error-area h2 {
@@ -2525,8 +2528,11 @@
 
     .error-area .top-content ul li {
         font-size: 120px;
-        margin-right: 15px;
         margin-bottom: 15px
+    }
+
+    .error-area .top-content ul li:nth-of-type(2) {
+        margin: 0 15px;
     }
 
     .error-area h2 {
@@ -3603,6 +3609,10 @@
         margin-right: 0;
     }
 
+    .news-details .news-simple-card .image {
+        height: 250px;
+    }
+
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
@@ -3781,13 +3791,38 @@
     .instructor .instructor-content .quick-contact ul li i,
     .curriculum .list ul li,
     .instructor .instructor-content .name p,
-    .overview .overview-box.list p {
+    .overview .overview-box.list p,
+    .section-title.center p,
+    .single-academics-card p,
+    .overview .overview-box .list ul li,
+    .contact-and-address .contact-and-address-content .contact-card p,
+    .contact-and-address .contact-and-address-content .contact-card p a,
+    .news-details .news-simple-card p,
+    .accordion .accordion-item .accordion-body,
+    .error-area p {
         font-size: 15px;
+    }
+
+    .contact-and-address .contact-and-address-content .contact-card h4 {
+        font-size: 20px;
+    }
+
+    .accordion .accordion-item h5 {
+        font-size: 17px;
     }
 
     .instructor .instructor-content .name h3,
     .instructor .instructor-content .social h3 {
         font-size: 21px;
+    }
+
+    .map-contact {
+        height: 230px;
+    }
+
+    .related-post-area .related-post-box .related-post-content img {
+        height: 60px;
+        width: 80px;
     }
 
     .overview .learn h3 i {
@@ -3834,6 +3869,14 @@
 
     .table tr td {
         font-size: 15px;
+    }
+
+    .pt-50 {
+        padding-top: 25px;
+    }
+
+    .news-details .news-simple-card .image {
+        height: 200px;
     }
 }
 

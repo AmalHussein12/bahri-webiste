@@ -27,6 +27,10 @@
       padding-bottom: 100px
   }
 
+  .pt-50 {
+      padding-top: 50px;
+  }
+
   .pt-100 {
       padding-top: 100px
   }
@@ -266,7 +270,7 @@
       z-index: 99;
       opacity: 0;
       background: #fff;
-      top: 80px;
+      top: 40px;
       left: -8px;
       padding: 0;
   }
@@ -311,6 +315,10 @@
       line-height: 1;
       font-size: 17px;
       transform: translateY(-50%);
+  }
+
+  .header-left-content .list ul li.menu .dropdown-menu li::after {
+      display: none;
   }
 
   .buy-now-btn {
@@ -1513,6 +1521,26 @@
       box-shadow: none
   }
 
+  .default-btn.balck {
+      background: #212121;
+  }
+
+  .default-btn.balck::before {
+      background: #008a3d;
+      border-radius: 30px;
+  }
+
+  .default-btn.balck:hover {
+      color: #fff;
+      background-color: transparent;
+      border-color: transparent
+  }
+
+  .default-btn.balck:hover::before {
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1)
+  }
+
   .read-more-btn {
       color: #008a3d;
       font-weight: 500;
@@ -1631,6 +1659,19 @@
 
   .section-title.inner h2 {
       margin-bottom: 20px;
+  }
+
+  .section-title.center {
+      padding-bottom: 0;
+  }
+
+  .section-title.center::before,
+  .section-title.center::after {
+      display: none;
+  }
+
+  .section-title.center p {
+      font-size: 16.5px;
   }
 
   .banner-area {
@@ -1952,17 +1993,18 @@
   .single-academics-card .academic-top-content h3 {
       font-size: 22px;
       -webkit-transition: all ease .5s;
-      transition: all ease .5s
+      transition: all ease .5s;
+      color: #212121;
   }
 
   .single-academics-card .academic-top-content h3:hover {
-      color: #212121
+      color: #008a3d;
   }
 
   .single-academics-card .academic-top-content i {
       font-size: 30px;
       position: absolute;
-      color: #212121;
+      color: #00a76a;
       left: 0;
       top: 50%;
       -webkit-transform: translateY(-50%);
@@ -1972,6 +2014,12 @@
   .single-academics-card:hover {
       -webkit-transform: translateY(-10px);
       transform: translateY(-10px)
+  }
+
+  .single-academics-card p {
+      font-size: 16.5px;
+      font-weight: 500;
+      line-height: 1.8;
   }
 
   .single-academics-card2 {
@@ -2914,7 +2962,7 @@
       display: inline-block;
       -webkit-transition: all ease .5s;
       transition: all ease .5s;
-      color: #008a3d;
+      color: #212121;
       font-size: 18px;
       -webkit-box-shadow: 0 0 20px 3px rgba(0, 0, 0, .05);
       box-shadow: 0 0 20px 3px rgba(0, 0, 0, .05)
@@ -2932,9 +2980,9 @@
   }
 
   .paginations ul li a.active {
-      background-color: #212121;
+      background-color: #008a3d;
       color: #fff;
-      border: 1px solid #212121
+      border: 1px solid #008a3d
   }
 
   .courses-details .courses-card {
@@ -3024,16 +3072,20 @@
       padding-right: 37px;
   }
 
-.overview .overview-box .list ul {
-    padding: 0;
-    margin-top: 20px;
-}
-.overview .overview-box .list ul li {
-    font-weight: 500;
-    font-size: 16.5px;
-        color: #555;
-    line-height: 1.8;
-}
+  .overview .overview-box .list ul {
+      padding: 0;
+      margin-top: 20px;
+  }
+
+  .overview .overview-box .list ul li {
+      font-weight: 500;
+      font-size: 16.5px;
+      color: #555;
+      line-height: 1.8;
+      list-style: none;
+      margin-bottom: .5rem;
+  }
+
   .overview .overview-box.list h4 {
       font-weight: 700;
       color: rgb(0, 167, 106);
@@ -3131,6 +3183,10 @@
       background-color: #212121;
       left: -30px;
       top: 11px
+  }
+
+  .overview .overview-box h4 strong {
+      color: #d80000;
   }
 
   .curriculum {
@@ -5232,7 +5288,8 @@
       margin-bottom: 15px;
       -webkit-transition: all ease .5s;
       transition: all ease .5s;
-      line-height: 1.3
+      line-height: 1.3;
+      color: #212121;
   }
 
   .single-news-card .news-content p {
@@ -5464,8 +5521,9 @@
   }
 
   .related-post-area .related-post-box .related-post-content h4 {
-      font-size: 16px;
-      margin-bottom: 10px
+      font-size: 15px;
+      margin-bottom: 10px;
+      line-height: 1.5;
   }
 
   .related-post-area .related-post-box .related-post-content h4 a {
@@ -5486,7 +5544,8 @@
       left: 0;
       top: 50%;
       -webkit-transform: translateY(-50%);
-      transform: translateY(-50%)
+      transform: translateY(-50%);
+      object-fit: contain;
   }
 
   .related-post-area .related-post-box .related-post-content p i {
@@ -5506,8 +5565,16 @@
       color: #212121
   }
 
+  .news-details .news-simple-card .image {
+      height: 400px;
+      overflow: hidden;
+      margin-bottom: 20px;
+  }
+
   .news-details .news-simple-card img {
-      margin-bottom: 20px
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
   }
 
   .news-details .news-simple-card .list {
@@ -5534,12 +5601,16 @@
   }
 
   .news-details .news-simple-card h2 {
-      font-size: 36px;
-      margin-bottom: 20px
+      font-size: 34px;
+      margin-bottom: 20px;
+      line-height: 1.5;
   }
 
   .news-details .news-simple-card p {
-      margin-bottom: 20px
+      margin-bottom: 20px;
+      font-size: 16.5px;
+      line-height: 1.8;
+      font-weight: 500;
   }
 
   .news-details .theory .theory-box {
@@ -6140,7 +6211,9 @@
   }
 
   .contacts-form .form-group label {
-      margin-bottom: 7px
+      margin-bottom: 7px;
+      font-weight: 500;
+      font-size: 16px;
   }
 
   .contacts-form .form-group .form-control {
@@ -6181,6 +6254,11 @@
       width: 100%
   }
 
+  .contacts-form .default-btn:hover {
+      background: transparent;
+      border-color: transparent;
+  }
+
   .contact-and-address h2 {
       font-size: 30px;
       margin-bottom: 20px
@@ -6208,8 +6286,8 @@
       height: 65px;
       width: 65px;
       line-height: 65px;
-      border: 1px solid #212121;
-      color: #212121;
+      border: 1px solid #008a3d;
+      color: #008a3d;
       text-align: center;
       border-radius: 100%;
       margin: auto;
@@ -6218,17 +6296,22 @@
 
   .contact-and-address .contact-and-address-content .contact-card h4 {
       font-size: 22px;
-      margin-bottom: 15px
+      margin-bottom: 15px;
+      color: #212121;
   }
 
   .contact-and-address .contact-and-address-content .contact-card p {
-      margin-bottom: 10px
+      margin-bottom: 10px;
+      font-weight: 500;
+      font-size: 16.5px;
   }
 
   .contact-and-address .contact-and-address-content .contact-card p a {
       color: #555;
       -webkit-transition: all ease .5s;
-      transition: all ease .5s
+      transition: all ease .5s;
+      font-weight: 500;
+      font-size: 16.5px;
   }
 
   .contact-and-address .contact-and-address-content .contact-card p a:hover {
@@ -6261,8 +6344,8 @@
   }
 
   .contact-and-address .social-media ul li a {
-      height: 35px;
-      width: 35px;
+      height: 37px;
+      width: 37px;
       line-height: 37px;
       border-radius: 100%;
       text-align: center;
@@ -6270,7 +6353,8 @@
       background-color: #eee;
       color: #212121;
       -webkit-transition: all ease .5s;
-      transition: all ease .5s
+      transition: all ease .5s;
+      font-size: 18px;
   }
 
   .contact-and-address .social-media ul li a:hover {
@@ -6278,6 +6362,11 @@
       color: #fff;
       -webkit-transform: translateY(-5px);
       transform: translateY(-5px)
+  }
+
+  .map-contact {
+      height: 400px;
+      background: #f4f6f9;
   }
 
   .go-top {
@@ -6401,7 +6490,7 @@
 
   .accordion .accordion-item {
       margin-bottom: 20px;
-      border: 1px solid rgba(227, 40, 69, .4);
+      border: 1px solid rgba(0, 138, 61, .4);
       border-radius: 10px
   }
 
@@ -6412,7 +6501,7 @@
   .accordion .accordion-item .accordion-button {
       border: none;
       background-color: transparent;
-      color: #008a3d;
+      color: #212121;
       font-size: 18px;
       font-weight: 700;
       position: relative;
@@ -6434,7 +6523,7 @@
       background-image: unset;
       content: "";
       font-size: 20px;
-      color: #008a3d;
+      color: #212121;
       text-align: center;
       content: "\ea13";
       font-family: remixicon !important;
@@ -6452,7 +6541,19 @@
 
   .accordion .accordion-item .accordion-body {
       padding-top: 0;
-      font-size: 15px
+      font-size: 16.5px;
+      font-weight: 500;
+      line-height: 1.8;
+  }
+
+  .accordion .accordion-item .accordion-body .overview .overview-box h4::before {
+      background: #00a76a;
+  }
+
+  .accordion .accordion-item h5 {
+      color: #212121;
+      padding: var(--bs-accordion-btn-padding-y) var(--bs-accordion-btn-padding-x);
+      font-size: 20px;
   }
 
   .login {
@@ -6699,6 +6800,17 @@
       margin-bottom: 0;
   }
 
+  .condition-content.center-text {
+      text-align: center;
+  }
+
+  .condition-content.center-text p {
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 40px;
+  }
+
   .error-area {
       text-align: center
   }
@@ -6709,7 +6821,8 @@
 
   .error-area .top-content ul {
       padding-left: 0;
-      margin-bottom: 0
+      margin-bottom: 0;
+      padding: 0;
   }
 
   .error-area .top-content ul li {
@@ -6717,9 +6830,12 @@
       font-weight: 700;
       display: inline-block;
       line-height: 1;
-      margin-right: 30px;
       color: #212121;
       font-family: "source serif pro", serif
+  }
+
+  .error-area .top-content ul li:nth-of-type(2) {
+      margin: 0 25px;
   }
 
   .error-area .top-content ul li:first-child {
@@ -6732,11 +6848,14 @@
 
   .error-area h2 {
       font-size: 36px;
-      margin-bottom: 20px
+      margin-bottom: 30px;
+      color: #212121;
   }
 
   .error-area p {
-      margin-bottom: 30px
+      margin-bottom: 30px;
+      font-size: 16.5px;
+      font-weight: 500;
   }
 
   .coming-soon-area {
@@ -7550,6 +7669,43 @@
   html[dir="rtl"] .instructor-image {
       margin-right: 0;
       margin-left: 30px;
+  }
+
+  html[dir="rtl"] .accordion .accordion-item .accordion-button::after {
+      margin-left: 0;
+      margin-right: auto;
+  }
+
+  html[dir="rtl"] .serch-content .form-group .src-btn {
+      right: auto;
+      left: 10px;
+  }
+
+  html[dir="rtl"] .related-post-area .related-post-box .related-post-content {
+      padding-left: 0;
+      padding-right: 105px;
+  }
+
+  html[dir="rtl"] .related-post-area .related-post-box .related-post-content img {
+      left: auto;
+      right: 0;
+  }
+
+  html[dir="rtl"] .paginations ul li {
+      padding-right: 0;
+      padding-left: 10px;
+  }
+
+  html[dir="rtl"] .paginations ul li a i.flaticon-next,
+  html[dir="rtl"] .paginations ul li a i.flaticon-back {
+      transform: rotate(180deg);
+      display: inline-block;
+      top: -4px;
+  }
+
+  html[dir="rtl"] .latest-news-left-content.pr-20 {
+      padding-right: 0 !important;
+      padding-left: 20px !important;
   }
 
   /* /. DIRECTION EDIT */

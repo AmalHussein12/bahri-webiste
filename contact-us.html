@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="assets/css/preview.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="icon" type="image/png" href="assets/images/favicon2.png">
-    <title>جامعة بحري - إدارة الموارد البشرية</title>
+    <title>جامعة بحري - تواصل معنا</title>
 </head>
 
 <body>
@@ -153,7 +153,7 @@
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link dropdown-toggle active">
+                                <a href="#" class="nav-link dropdown-toggle">
                                     الإدارة
                                 </a>
                                 <ul class="dropdown-menu">
@@ -402,254 +402,131 @@
     <div class="page-banner-area bg-2">
         <div class="container">
             <div class="page-banner-content">
-                <h1>إدارة الموارد البشرية</h1>
+                <h1>تواصل معنا</h1>
                 <ul>
                     <li><a href="index.html">الرئيسية</a></li>
-                    <li>إدارات الجامعة</li>
-                    <li>إدارة الموارد البشرية</li>
+                    <li>تواصل معنا</li>
                 </ul>
             </div>
         </div>
     </div>
     <!-- /. TOP BANNER -->
 
-
-    <!--- SECTION CONTENT -->
-    <div class="terms-condition-area pt-100 pb-70">
+    <!-- SECTION CONTENT -->
+    <div class="contact-us-area pt-100 pb-70">
         <div class="container">
-            <div class="row" style="justify-content: center;">
-                <div class="col-lg-12">
-                    <div class="condition-content">
-                        <h2>إدارة الموارد البشرية</h2>
-                        <p>مديرية الموارد البشرية هي إحدى الوحدات الإدارية الرئيسية في جامعة بحري. وتتمثل مهمتها في وصف وتحديد الاختصاصات للموظفين والفنيين والإداريين والعاملين. تخضع إدارة الموارد البشرية للمدير المباشر للجامعة.</p>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="contacts-form">
+                        <h3>إرسال إستفسار</h3>
+                        <form id="contactForm" novalidate="true">
+                            <div class="row">
+                                <div class="col-lg-6 col-sm-6">
+                                    <div class="form-group">
+                                        <label>الإسم</label>
+                                        <input type="text" class="form-control" required="" placeholder=" الإسم">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-6">
+                                    <div class="form-group">
+                                        <label>البريد الإلكتروني</label>
+                                        <input type="email" class="form-control" required="" placeholder="البريد الإلكتروني">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-6">
+                                    <div class="form-group">
+                                        <label>رقم الهاتف</label>
+                                        <input type="text" required="" class="form-control" placeholder="رقم الهاتف">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-6">
+                                    <div class="form-group">
+                                        <label>الموضوع</label>
+                                        <input type="text" class="form-control" required="" placeholder="الموضوع">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label>الرسالة</label>
+                                        <textarea class="form-control pt-3" cols="30" rows="11" required="" placeholder="الرسالة"></textarea>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-md-12">
+                                    <button type="submit" class="default-btn disabled" style="pointer-events: all; cursor: pointer;">
+                                        <span>إرسـال</span>
+                                    </button>
+                                    <div id="msgSubmit" class="h3 text-center hidden"></div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </form>
                     </div>
-
-                    <div class="description two bg-f4f6f9">
-                        <div class="container p-0">
-                            <nav>
-                                <div class="nav nav-tabs d-flex justify-content-between" id="nav-tab" role="tablist">
-                                    <button class="nav-link active" id="nav-overview-tab" data-bs-toggle="tab" data-bs-target="#nav-overview" type="button" role="tab" aria-controls="nav-overview" aria-selected="true">الرؤية و المهمة</button>
-                                    <button class="nav-link" id="nav-curriculum-tab" data-bs-toggle="tab" data-bs-target="#nav-curriculum" type="button" role="tab" aria-controls="nav-curriculum" aria-selected="false" tabindex="-1">القيم و الأهداف</button>
-                                    <button class="nav-link" id="nav-instructor-tab" data-bs-toggle="tab" data-bs-target="#nav-instructor" type="button" role="tab" aria-controls="nav-instructor" aria-selected="false" tabindex="-1">مسؤوليات الإدارة</button>
-                                    <button class="nav-link" id="nav-reviews-tab" data-bs-toggle="tab" data-bs-target="#nav-reviews" type="button" role="tab" aria-controls="nav-reviews" aria-selected="false" tabindex="-1">هيكلية القسم</button>
-                                </div>
-                            </nav>
-                            <div class="tab-content" id="nav-tabContent">
-                                <div class="tab-pane fade show active" id="nav-overview" role="tabpanel" aria-labelledby="nav-overview-tab">
-                                    <div class="overview">
-                                        <div class="learn">
-                                            <h3><i class="ri-eye-fill"></i> الرؤية</h3>
-                                            <p>الهدف من إدارة الموارد البشرية هو تعزيز المهنية والرضا الوظيفي من خلال الإدارة المثلى للموارد البشرية المتاحة في الجوانب الأكاديمية والإدارية.</p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="contact-and-address">
+                        <h2>تواصل معنا</h2>
+                        <div class="contact-and-address-content">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="contact-card">
+                                        <div class="icon">
+                                            <i class="ri-map-pin-line"></i>
                                         </div>
-                                    </div>
-
-                                    <div class="overview">
-                                        <div class="learn mb-0">
-                                            <h3><i class="ri-pencil-fill"></i> المهمة</h3>
-                                            <p>تحديد الأنشطة المتعلقة بالعمل الإداري في جامعة باري لضمان توفير الموارد البشرية ذات الكفاءات العالية في المجالات الأكاديمية والفنية والإدارية من خلال التخطيط والتدريب والتوثيق. تتماشى الرسالة مع أهداف الجامعة.</p>
-                                        </div>
+                                        <h4>العنوان</h4>
+                                        <p>السودان - الخرطوم - بحري</p>
+                                        <p> شارع الإنقاذ - غرب محطة السكة الحديدية</p>
                                     </div>
                                 </div>
-                                <div class="tab-pane fade" id="nav-curriculum" role="tabpanel" aria-labelledby="nav-curriculum-tab">
-                                    <div class="overview">
-                                        <div class="learn">
-                                            <h3><i class="flaticon-college-graduation"></i> القيم</h3>
-                                            <p>تهدف مديرية تنمية الموارد البشرية إلى تعزيز قيم مثل الصدق والشفافية والإنصاف والاعتراف بالتنوع الفردي وضمان الجودة والدقة والتطوير وتطبيق التكنولوجيا ذات الصلة.</p>
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="contact-card">
+                                        <div class="icon">
+                                            <i class="ri-phone-line"></i>
                                         </div>
-                                    </div>
-
-                                    <div class="overview">
-                                        <div class="learn">
-                                            <h3><i class="ri-checkbox-circle-fill"></i> أهداف الإدارة</h3>
-                                            <div class="overview">
-                                                <div class="overview-box">
-                                                    <h4>استيفاء معايير الجودة
-                                                        تطبيق نظام موظفي المعلومات.</h4>
-                                                </div>
-                                                <div class="overview-box">
-                                                    <h4>الاحترام والاعتراف اعتماد حل قائم على التنظيم لمشاكل الموظفين.</h4>
-                                                </div>
-                                                <div class="overview-box">
-                                                    <h4>تزويد إدارة الجامعة بالنصائح ذات الصلة بإدارة الموارد البشرية.</h4>
-                                                </div>
-                                                <div class="overview-box">
-                                                    <h4>التقييم المنتظم لموظفي الجامعة.</h4>
-                                                </div>
-                                                <div class="overview-box">
-                                                    <h4>تقييم احتياجات الجامعة من الموارد البشرية.</h4>
-                                                </div>
-                                                <div class="overview-box">
-                                                    <h4>تعزيز الأداء المهني والتنظيمي.</h4>
-                                                </div>
-                                                <div class="overview-box">
-                                                    <h4> خلق الرضا الوظيفي بين العاملين.</h4>
-                                                </div>
-
-                                            </div>
-
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="tab-pane fade" id="nav-instructor" role="tabpanel" aria-labelledby="nav-instructor-tab">
-                                    <div class="row">
-                                        <div class="overview">
-                                            <div class="learn">
-                                                <h3><i class="ri-file-chart-fill"></i> مسؤوليات الإدارة</h3>
-                                            </div>
-                                            <div class="overview-box px-37">
-                                                <h4> تطبيق القواعد والإجراءات والممارسات الإدارية المعيارية في توظيف الموارد البشرية.</h4>
-                                            </div>
-                                            <div class="overview-box px-37">
-                                                <h4>منافسة إجراءات تعيين الموظفين.</h4>
-                                            </div>
-                                            <div class="overview-box px-37">
-                                                <h4>إعداد موازنة التوظيف بالجامعة.</h4>
-                                            </div>
-                                            <div class="overview-box px-37">
-                                                <h4>إبداء الرأي الفني في الشؤون الإدارية.</h4>
-                                            </div>
-                                            <div class="overview-box px-37">
-                                                <h4>مسك السجلات وملفات الموظفين بشكل يدوي ورقمي.</h4>
-                                            </div>
-                                            <div class="overview-box px-37">
-                                                <h4>إدارة الأعمال الورقية الداخلية اليومية في الجامعة.</h4>
-                                            </div>
-                                            <div class="overview-box px-37">
-                                                <h4>المراجعة الدورية لملفات الموظفين الخاصة بالترقية والعلاوات.</h4>
-                                            </div>
-
-                                            <div class="overview-box px-37">
-                                                <h4>إعداد نماذج تقارير فحص أداء الموظف وتقييمه.</h4>
-                                            </div>
-                                            <div class="overview-box px-37">
-                                                <h4>حفظ الوثائق والتعاميم الصادرة عن المؤسسات الحكومية ذات العلاقة والجامعة.</h4>
-                                            </div>
-                                            <div class="overview-box px-37">
-                                                <h4>استكمال إجراءات المعاشات.</h4>
-                                            </div>
-                                            <div class="overview-box px-37">
-                                                <h4>متابعة إجراءات ضريبة الدخل ومراجعة استقطاعات المعاش.</h4>
-                                            </div>
-                                            <div class="overview-box px-37">
-                                                <h4>متابعة برنامج التأمين الصحي بالجامعة.</h4>
-                                            </div>
-                                            <div class="overview-box px-37">
-                                                <h4>حفظ الملفات في الأرشيف.</h4>
-                                            </div>
-                                        </div>
-
+                                        <h4>رقم الهاتف</h4>
+                                        <p><a href="tel:+249155888430">888430 (155) 249+</a></p>
+                                        <p><a href="tel:+249155888431">888431 (155) 249+</a></p>
+                                        <p class="mb-0"><a href="tel:+249155888430">888430 (155) 249+</a></p>
                                     </div>
                                 </div>
-                                <div class="tab-pane fade" id="nav-reviews" role="tabpanel" aria-labelledby="nav-reviews-tab">
-                                   <div class="image-strucure">
-                                       <img src="assets/images/structure-of-DHR-1.png" alt="Image">
-                                   </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="contact-card">
+                                        <div class="icon">
+                                            <i class="ri-mail-line"></i>
+                                        </div>
+                                        <h4>البريد الإلكتروني</h4>
+                                        <p><a href="mailto:info@bahri.edu.sd">info@bahri.edu.sd</a></p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="contact-card">
+                                        <div class="icon">
+                                            <i class="ri-printer-line"></i>
+                                        </div>
+                                        <h4>فاكس</h4>
+                                        <p>info@bahri.edu.sd</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-12">
-                    <div class="condition-content mt-5">
-                        <h2>مسؤولي الموارد البشرية</h2>
-<!--                        <p>أمين الشؤون العلمية مسؤول أمام نائب رئيس الجامعة ونائبه عن إدارة جميع الأمور الأكاديمية في الجامعة المتعلقة بقبول الطلاب وتطوير المناهج والامتحانات والشهادات والتدريب وشؤون مجلس الشيوخ.</p>-->
-                    </div>
-                    <div class="table-responsive">
-                        <table class="table">
-                            <thead>
-                                <tr>
-                                    <td>الإسم</td>
-                                    <td>المكتب</td>
-                                    <td>البريد الإلكتروني</td>
-                                    <td>رقم الهاتف</td>
-                                </tr>
-                            </thead>
-
-                            <tbody>
-                                <tr>
-                                    <td>ملاذ عبد العزيز آدم</td>
-                                    <td>مدير الموارد البشرية</td>
-                                    <td>malaz@gmail.com</td>
-                                    <td>0912229781</td>
-                                </tr>
-                                <tr>
-                                    <td>محمد بخيت محمد</td>
-                                    <td>قسم الاداري</td>
-                                    <td>d.staff.hr@Bahri.edu.sd 	</td>
-                                    <td>0155888426</td>
-                                </tr>
-                                <tr>
-                                    <td>فتحية عيدالله محمد</td>
-                                    <td>قسم العمال</td>
-                                    <td>d.worker.hr@Bahri.edu.sd </td>
-                                    <td>0121082226</td>
-                                </tr>
-                                <tr>
-                                    <td>محمد نور الدين دهب</td>
-                                    <td>دائرة المعاشات</td>
-                                    <td>d.pensions.hr@Bahri.edu.sd</td>
-                                    <td>0155888438</td>
-                                </tr>
-                                 <tr>
-                                    <td>محمد بخيت محمد</td>
-                                    <td>قسم المكتب السري</td>
-                                    <td>d.secret.hr @Bahri.edu.sd 	 	</td>
-                                    <td>0155888426</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-
-
-                <div class="col-lg-4" style="display: none">
-                    <div class="condition-right-content pl-20">
-                        <div class="category-list">
-                            <h3>عن الإدارة</h3>
+                        <div class="social-media">
+                            <h3>مواقع التواصل</h3>
                             <ul>
                                 <li>
-                                    <a href="#">مكتب مدير الجامعة<i class="ri-arrow-drop-right-fill"></i></a>
+                                    <a href="#" target="_blank"><i class="ri-facebook-fill"></i></a>
                                 </li>
                                 <li>
-                                    <a href="#">رسالة مدير الجامعة<i class="ri-arrow-drop-right-fill"></i></a>
+                                    <a href="#" target="_blank"><i class="ri-twitter-fill"></i></a>
                                 </li>
                                 <li>
-                                    <a href="#">السيرة الذاتية لمدير الجامعة<i class="ri-arrow-drop-right-fill"></i></a>
+                                    <a href="#" target="_blank"><i class="ri-instagram-line"></i></a>
                                 </li>
                                 <li>
-                                    <a href="#">مدير الجامعة<i class="ri-arrow-drop-right-fill"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#">نائب مدير الجامعة<i class="ri-arrow-drop-right-fill"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#">وكيل الجامعة<i class="ri-arrow-drop-right-fill"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#">أمين الشؤون العلمية<i class="ri-arrow-drop-right-fill"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#">أمانة الشؤون العلمية<i class="ri-arrow-drop-right-fill"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#">مكتب وكيل الجامعة<i class="ri-arrow-drop-right-fill"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#">إدارة الموارد البشرية<i class="ri-arrow-drop-right-fill"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#">إدارة العلاقات الثقافية<i class="ri-arrow-drop-right-fill"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#">الإدارة المالية<i class="ri-arrow-drop-right-fill"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#">إدارة الإستثمار<i class="ri-arrow-drop-right-fill"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#">وحدة الخدمات الطبية و الصحية<i class="ri-arrow-drop-right-fill"></i></a>
+                                    <a href="#" target="_blank"><i class="ri-linkedin-fill"></i></a>
                                 </li>
                             </ul>
                         </div>
@@ -658,7 +535,13 @@
             </div>
         </div>
     </div>
-    <!--- /. SECTION CONTENT -->
+    <!-- /. SECTION CONTENT -->
+
+    <!-- SECTION CONTENT -->
+    <div class="map-contact">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3839.965031778668!2d32.595149135399346!3d15.752989009672984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x168eec3ab13de73d%3A0x2f25161cbf068052!2sUniversity%20of%20Bahri!5e0!3m2!1sen!2s!4v1677341478734!5m2!1sen!2s" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <!-- /. SECTION CONTENT -->
 
     <!-- FOOTER AREA -->
     <div class="footer-area pt-70 pb-50">
